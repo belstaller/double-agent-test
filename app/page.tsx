@@ -9,6 +9,10 @@ export default function Home() {
     setCounter((prev) => prev + 1)
   }
 
+  const resetCounter = () => {
+    setCounter(0)
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm">
@@ -33,6 +37,13 @@ export default function Home() {
             >
               Increment
             </button>
+            <button
+              onClick={resetCounter}
+              className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+            >
+              Reset
+            </button>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 w-full max-w-4xl">
             <a
