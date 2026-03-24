@@ -18,7 +18,7 @@ export default function Counter() {
       <p className="text-xl font-semibold">Counter: {counter}</p>
       <button
         onClick={incrementCounter}
-        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        className="px-4 py-2 bg-pink-500 text-white font-semibold rounded-full shadow-md hover:bg-pink-600 transition-colors cursor-pointer"
       >
         Increment
       </button>
