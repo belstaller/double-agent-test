@@ -1,18 +1,6 @@
-'use client'
-
-import { useState } from 'react'
+import Counter from '@/components/Counter'
 
 export default function Home() {
-  const [counter, setCounter] = useState<number>(0)
-
-  const incrementCounter = () => {
-    setCounter((prev) => prev + 1)
-  }
-
-  const resetCounter = () => {
-    setCounter(0)
-  }
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm">
@@ -20,7 +8,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Persistence and Double Agent Test 2
           </h1>
-          
+
           <p className="text-lg text-center text-gray-600 dark:text-gray-400 max-w-2xl">
             Welcome to your Next.js application with TypeScript and Tailwind CSS.
             Start building by editing{' '}
@@ -29,21 +17,7 @@ export default function Home() {
             </code>
           </p>
 
-          <div className="flex flex-col items-center gap-4 mt-8 w-full max-w-4xl">
-            <p className="text-xl font-semibold">Counter: {counter}</p>
-            <button
-              onClick={incrementCounter}
-              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-            >
-              Increment
-            </button>
-            <button
-              onClick={resetCounter}
-              className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
-            >
-              Reset
-            </button>
-          </div>
+          <Counter />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 w-full max-w-4xl">
             <a
