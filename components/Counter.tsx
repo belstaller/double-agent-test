@@ -24,7 +24,7 @@ export default function Counter() {
       </button>
       <button
         onClick={resetCounter}
-        className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+        className="px-4 py-2 bg-pink-500 text-white rounded shadow-md hover:bg-pink-600 transition-colors"
       >
         Reset
       </button>
